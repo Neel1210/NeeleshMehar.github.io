@@ -1,6 +1,5 @@
-/* Light Border #359bfad8 */
-/* Main colour #359afa */
-/* #233d64 */
+/* Light Border #5D92B0 */
+/* Main colour #5D92B0 */
 
 @import 'pe-icon-7-stroke.css';
 @import 'font-awesome.css';
@@ -650,13 +649,13 @@ ul.social-links li:last-child a {
     bottom: 5px;
     left: -5px;
     content: "";
-    border: 1px solid #359bfad8;
+    border: 1px solid #5D92B0;
     transform: skew(0deg, 65deg);
     -ms-transform: skew(0deg, 65deg);
     -webkit-transform: skew(0deg, 65deg);
     -o-transform: skew(0deg, 65deg);
     -moz-transform: skew(0deg, 65deg);
-    background: #359bfad8
+    background: #5D92B0
 }
 
 .section-description {
@@ -1655,7 +1654,7 @@ ul.social-links li:last-child a {
 
 .blog-back-button:hover:after,
 .blog-back-button:visited:hover:after {
-    background: #359bfad8
+    background: #5D92B0
 }
 
 .blog-back-button i {
