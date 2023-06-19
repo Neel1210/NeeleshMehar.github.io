@@ -16,6 +16,7 @@
             });
         }
     }
+    
     $(function() {
         $('#contact-form').validator();
         $('#contact-form').on('submit', function(e) {
@@ -30,8 +31,8 @@
                 return false;
             }
         });
-    }); 
-        
+    });
+    
     function mobileMenuHide() { var windowWidth = $(window).width(); if (windowWidth < 1024) { $('.site-nav').addClass('mobile-menu-hide'); } }
     $(document).ready(function() {
         var $portfolio_container = $("#portfolio_grid");
