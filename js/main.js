@@ -48,7 +48,7 @@
                 port: 2525,
                 auth: {
                   user: '1210neelesh@gmail.com', // Your email address
-                  pass: '8CB99C635C6DE5D557024CBEFB87CE973178' // Your email password or application-specific password
+                  pass: '' // Your email password or application-specific password
                 }
             });
 
