@@ -1,0 +1,24 @@
+name: MY REMP SECRET
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      USERNAME: ${{ secrets.USERNAME }}
+      PASSWORD: ${{ secrets.PASSWORD }}
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Build and deploy
+        run: |
+          # Use the secrets in your workflow
+          echo "USERNAME is $USERNAME"
+          echo "PASSWORD is $PASSWORD"
