@@ -1,5 +1,5 @@
 class Cred{
-    #userName = "scatraningandplacement@gmail.com";
+    #userName = ${{secrets.USERNAME}};
     #password = "152DF8D9E23A5DDAB7C6911ADF48ACF1C85E";
 
     #getUserName() {
