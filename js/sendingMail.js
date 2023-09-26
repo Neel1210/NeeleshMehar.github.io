@@ -7,8 +7,8 @@ function sendMail() {
   var message = formData.get("message");
   Email.send({
     Host: "smtp.elasticemail.com",
-    Username: process.env.USERNAME,
-    Password: process.env.PASSWORD,
+    Username: "scatraningandplacement@gmail.com",
+    Password: "152DF8D9E23A5DDAB7C6911ADF48ACF1C85E",
     To: "contact@neeleshmehar.in",
     From: "scatraningandplacement@gmail.com",
     Subject: "Response From WebSite By :- "+name,
