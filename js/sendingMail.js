@@ -1,4 +1,3 @@
-
 function sendMail() {
   let data = $("#contact-form").serialize();
   var formData = new URLSearchParams(data);
@@ -16,7 +15,10 @@ function sendMail() {
       "Response ,\nName : " + name +
       "\nMail : " + mail +
       "\nMessage : " + message,
-  }).then((message) => alert("Thanks For Contacting"));
+  }).then((message) => {
+    alert("Thanks For Contacting")
+    location.reload();
+  });
 }
 
 var Email = {

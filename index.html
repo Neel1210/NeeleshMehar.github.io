@@ -845,7 +845,7 @@
 <script src="js/owl.carousel.min.js "></script>
 <script src="js/jquery.magnific-popup.min.js "></script>
 <script src="js/jquery.hoverdir.js "></script>    
-<script src="./js/sendingMail.mjs"></script>
+<script src="./js/sendingMail.js"></script>
 <script>
     document.getElementById("formsubmit").addEventListener("click", (event) => {
         let data = $("#contact-form").serialize();
@@ -853,7 +853,6 @@
         var name = formData.get("name");
         var mail = formData.get("email");
         var message = formData.get("message");
-        alert(name + "\n" + mail + "\n" + message);
         sendMail();
     });
 </script>

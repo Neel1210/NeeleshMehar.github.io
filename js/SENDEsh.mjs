@@ -1,6 +1,6 @@
 class Cred{
-    #userName = process.env.USERNAME;
-    #password = process.env.PASSWORD;
+    #userName = "";
+    #password = "";
 
     #getUserName() {
         return this.#getUserName;
