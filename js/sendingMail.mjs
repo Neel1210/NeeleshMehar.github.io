@@ -10,7 +10,7 @@ function sendMail() {
   alert(name + "\n" + mail + "\n" + message);
   Email.send({
     Host: "smtp.elasticemail.com",
-    Username: MyCred._getUserName(),
+    Username: process.env.USERNAME,
     Password: MyCred._getPassword(),
     To: "contact@neeleshmehar.in",
     From: "scatraningandplacement@gmail.com",
