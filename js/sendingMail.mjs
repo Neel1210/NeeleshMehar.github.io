@@ -5,13 +5,11 @@ function sendMail() {
   var name = formData.get("name");
   var mail = formData.get("email");
   var message = formData.get("message");
-  var cred=require(".SENDEsh.mjs").Cred();
-  var MyCred=new cred();
   alert(name + "\n" + mail + "\n" + message);
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: process.env.USERNAME,
-    Password: MyCred._getPassword(),
+    Password:"152DF8D9E23A5DDAB7C6911ADF48ACF1C85E",
     To: "contact@neeleshmehar.in",
     From: "scatraningandplacement@gmail.com",
     Subject: "Response From WebSite By :- "+name,
