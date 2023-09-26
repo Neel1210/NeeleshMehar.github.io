@@ -1,6 +1,6 @@
 class Cred{
-    #userName = ${{secrets.USERNAME}};
-    #password = "152DF8D9E23A5DDAB7C6911ADF48ACF1C85E";
+    #userName = process.env.USERNAME;
+    #password = process.env.PASSWORD;
 
     #getUserName() {
         return this.#getUserName;
