@@ -1912,3 +1912,9 @@ blockquote {
 .g-recaptcha {
     margin-bottom: 20px
 }
+
+@media (prefers-color-scheme: dark) {
+    #dark-mode-stylesheet {
+        disabled: false;
+    }
+}
