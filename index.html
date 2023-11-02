@@ -811,14 +811,14 @@
                                         </div>
 
                                         <div class="form-group ">
-                                            <input id="form_email " type="email " name="email" class="form-control " placeholder="Email Address " required="required " data-error="Valid email is required. ">
+                                            <input id="form_email" type="email " name="email" class="form-control " placeholder="Email Address " required="required " data-error="Valid email is required. ">
                                             <div class="form-control-border "></div>
                                             <i class="form-control-icon fa fa-envelope "></i>
                                             <div class="help-block with-errors "></div>
                                         </div>
 
                                         <div class="form-group ">
-                                            <textarea id="form_message " name="message" class="form-control " placeholder="Message for me " rows="4 " required="required " data-error="Please, leave me a message. "></textarea>
+                                            <textarea id="form_message" name="message" class="form-control " placeholder="Message for me " rows="4 " required="required " data-error="Please, leave me a message. "></textarea>
                                             <div class="form-control-border "></div>
                                             <i class="form-control-icon fa fa-comment "></i>
                                             <div class="help-block with-errors "></div>
@@ -848,12 +848,21 @@
 <script src="./js/sendingMail.js"></script>
 <script>
     document.getElementById("formsubmit").addEventListener("click", (event) => {
+        var formElement1 = document.getElementById("form_name").text;
         let data = $("#contact-form").serialize();
         var formData = new URLSearchParams(data);
         var name = formData.get("name");
         var mail = formData.get("email");
         var message = formData.get("message");
-        sendMail();
+        if(name=="" || mail=="" || message=="")
+        {
+            alert("Please fill all the fileds...");
+            return;
+        }
+        else
+        {
+            sendMail();
+        }    
     });
 </script>
 <script src="js/main.js "></script>
