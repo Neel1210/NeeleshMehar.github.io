@@ -16,7 +16,7 @@ function sendMail() {
       "\nMail : " + mail +
       "\nMessage : " + message,
   }).then((message) => {
-    alert("Thanks For Contacting")
+    alert("Thanks For Contacting "+message)
     location.reload();
   });
 }
